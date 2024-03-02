@@ -1,0 +1,33 @@
+@use "sass:map";
+
+/* <-----> About Page Styles <-----> */
+
+.armenia-tabs {
+  .MuiButtonBase-root {
+    color: $text_black;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .MuiTabs-flexContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+  }
+
+  .Mui-selected {
+    background-color: $color_dark_green !important;
+    border-radius: 8px;
+    color: $text_white !important;
+
+    & svg {
+      color: $text_white !important;
+    }
+  }
+}

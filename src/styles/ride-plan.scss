@@ -1,0 +1,15 @@
+@use "sass:map";
+
+.make-ride-plan {
+  & .MuiRadio-root:hover {
+    background-color: transparent;
+  }
+
+  & .MuiSelect-icon {
+    display: none;
+  }
+}
+
+.call-back-modal-container {
+  overflow-y: scroll;
+}

@@ -1,0 +1,31 @@
+@use "sass:map";
+
+.tour-details-page {
+  & .thumbnails-section {
+    & .slick-slide {
+      padding: 4px;
+    }
+  }
+
+  & .related-section {
+    & .slick-slide {
+      padding: 12px;
+    }
+  }
+
+  & .tour-details-maps {
+    & li::marker {
+      font-size: 28px;
+    }
+  }
+
+  & .tour-price-table {
+    & td,
+    & th {
+      border: 1px solid gray;
+    }
+    & th {
+      background-color: #fff1ea;
+    }
+  }
+}

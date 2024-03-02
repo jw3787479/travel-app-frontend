@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Import fonts here
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
+
+// Import another scss file here
+@import "./base/colors.scss";
+@import "./homepage.scss";
+@import "./aboutpage.scss";
+@import "./global.scss";
+@import "./tour-details-page.scss";
+@import "./services.scss";
+@import "./ride-plan.scss";
+
+/* Hide scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: var(--font-rubik);
+}
+
+p,
+td,
+li,
+link {
+  font-family: var(--font-rubik);
+}
+
+a {
+  text-decoration: none;
+  font-family: var(--font-poppins);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  font-family: var(--font-poppins);
+}

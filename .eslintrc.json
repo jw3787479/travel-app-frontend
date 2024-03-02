@@ -1,0 +1,8 @@
+{
+  "extends": ["eslint:recommended", "next"],
+  "rules": {
+    "no-unused-vars": 0,
+    "no-extra-semi": "off"
+    // ...other rules...
+  }
+}

@@ -1,0 +1,148 @@
+@use "sass:map";
+
+.homepage-hero {
+  background-image: url("/public/bus_header.gif");
+}
+
+/* <-----> HomePage Styles <----> */
+.home-quality-section {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  div {
+    &:nth-child(2) {
+      border-left: 1px solid $color_primary_pink;
+    }
+    &:nth-child(3) {
+      border-left: 1px solid $color_primary_pink;
+    }
+    &:nth-child(4) {
+      border-left: 1px solid $color_primary_pink;
+    }
+  }
+}
+
+.home-filter-section {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+
+  & .react-datepicker__triangle::before,
+  & .react-datepicker__triangle::after {
+    display: none;
+  }
+
+  & .MuiFormControl-root {
+    min-width: 136px;
+    width: fit-content;
+  }
+  & .MuiOutlinedInput-notchedOutline {
+    border: none;
+  }
+
+  & .react-datepicker {
+    &::placeholder {
+      color: $text_black;
+      font-weight: 500;
+      font-size: 16px;
+    }
+    border: none;
+    background: $bg_white;
+    border-radius: 12px;
+  }
+
+  & .react-datepicker__header {
+    background-color: $bg_white;
+    border: none;
+  }
+
+  & .react-datepicker-year-header {
+    color: $color_primary_pink !important;
+  }
+
+  & .react-datepicker__month-container {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  & .react-datepicker__month {
+    .react-datepicker__month-text {
+      width: 96px !important;
+    }
+    .react-datepicker__quarter-text {
+      width: 96px !important;
+    }
+  }
+
+  & .react-datepicker__month-text {
+    font-family: $font_family_poppins;
+    padding: 8px 16px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  & .react-datepicker__day--keyboard-selected {
+    background-color: $bg_peach !important;
+  }
+
+  & .react-datepicker__month-text--keyboard-selected {
+    background-color: $bg_peach !important;
+  }
+
+  & .react-datepicker__quarter-text--keyboard-selected {
+    background-color: $bg_peach !important;
+  }
+
+  & .react-datepicker__year-text--keyboard-selected {
+    background-color: $bg_peach !important;
+  }
+}
+
+.home-testimonial-section {
+  .slick-slide {
+    padding: 12px;
+  }
+}
+
+.filter-date-count {
+  input::placeholder,
+  input::-webkit-input-placeholder {
+    color: black !important;
+    opacity: 1;
+  }
+}
+
+.home-tours-section {
+  .slick-prev {
+    left: -4px;
+    z-index: 9;
+    top: 60%;
+    border-radius: 2px;
+    &:before {
+      opacity: 100%;
+      font-size: 20px;
+      color: #d0cece;
+    }
+  }
+
+  .slick-next {
+    right: -4px;
+    z-index: 9;
+    top: 60%;
+    border-radius: 2px;
+    &:before {
+      opacity: 100%;
+      font-size: 20px;
+      color: #d0cece;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .home-quality-section {
+    div {
+      &:nth-child(3) {
+        border: none;
+      }
+    }
+  }
+}
+
+.react-datepicker-popper {
+  z-index: 99;
+}
